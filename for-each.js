@@ -1,5 +1,7 @@
 // Use the forEach method to solve these problems! All functions should return a NEW array, without mutating the old array.
 
+import { listNamesOfAllFruits } from "./filter-find";
+
 /*
 Input:
 [
@@ -17,6 +19,10 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
+    let [];
+    const animalNames = arr.forEach((name) => {
+        alert(`${name}`)
+    })
     return [];
 }
 
