@@ -1,6 +1,6 @@
 // Use the forEach method to solve these problems! All functions should return a NEW array, without mutating the old array.
 
-import { listNamesOfAllFruits } from "./filter-find";
+//import { listNamesOfAllFruits } from "./filter-find";
 
 /*
 Input:
@@ -19,11 +19,11 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    let [];
-    const animalNames = arr.forEach((name) => {
-        alert(`${name}`)
-    })
-    return [];
+    const animalNames = [];
+    arr.forEach((animal) => {
+        animalNames.push(animal.name)
+    });
+    return animalNames;
 }
 
 /*
@@ -33,7 +33,12 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    const reversedAnimalTypes = [];
+    arr.forEach((animal) => {
+        reversedAnimalTypes.push(animal.type);
+    });
+    return reversedAnimalTypes.reverse();
+    
 }
 
 /*
