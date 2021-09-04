@@ -21,7 +21,7 @@ Output:
 export function makeArrayOfNames(arr) {
     const animalNames = [];
     arr.forEach((animal) => {
-        animalNames.push(animal.name)
+        animalNames.push(animal.name);
     });
     return animalNames;
 }
@@ -53,6 +53,11 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    const spanishArray = [];
+    arr.forEach((item) => {
+        spanishArray.push({ nombre: item.name, tipo: item.type });
+    });
+    return spanishArray;
+    
 }
 
